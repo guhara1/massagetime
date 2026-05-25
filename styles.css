@@ -286,7 +286,9 @@ h3 {
 .service-card,
 .article-card,
 .location-grid article,
-.steps article {
+.steps article,
+.trust-grid article,
+.policy-list article {
   border: 1px solid var(--line);
   background: var(--panel);
 }
@@ -300,7 +302,9 @@ h3 {
 .service-card div,
 .article-card,
 .location-grid article,
-.steps article {
+.steps article,
+.trust-grid article,
+.policy-list article {
   padding: 22px;
 }
 
@@ -308,9 +312,30 @@ h3 {
 .article-card p,
 .location-grid p,
 .steps p,
+.trust-grid p,
+.policy-list p,
 .faq-list p {
   margin: 0;
   color: var(--muted);
+}
+
+.trust-section {
+  max-width: 1180px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.trust-grid article {
+  min-height: 260px;
+}
+
+.trust-grid p + p,
+.policy-list p + p {
+  margin-top: 10px;
 }
 
 .pricing-section {
@@ -380,6 +405,20 @@ td {
   margin-bottom: 18px;
   color: var(--gold);
   font-weight: 900;
+}
+
+.policy-section {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(18px, calc((100vw - var(--max)) / 2));
+  background: #121015;
+  border-block: 1px solid var(--line);
+}
+
+.policy-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .article-card {
@@ -482,6 +521,8 @@ details p {
 
   .card-grid.three,
   .location-grid,
+  .trust-grid,
+  .policy-list,
   .guide-layout,
   .site-footer {
     grid-template-columns: 1fr;
