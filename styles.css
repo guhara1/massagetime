@@ -415,6 +415,18 @@ td {
   border-block: 1px solid var(--line);
 }
 
+.detail-section {
+  max-width: 980px;
+}
+
+.detail-section .section-heading {
+  max-width: none;
+}
+
+.detail-section p + p {
+  margin-top: 16px;
+}
+
 .policy-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
