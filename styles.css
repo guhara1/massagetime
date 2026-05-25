@@ -633,11 +633,16 @@ details p {
 
 .site-footer {
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-columns: 1.5fr repeat(3, minmax(150px, 1fr));
   gap: 28px;
   padding: 48px max(18px, calc((100vw - var(--max)) / 2)) 86px;
   border-top: 1px solid var(--line);
   background: #060608;
+}
+
+.footer-company {
+  display: grid;
+  gap: 12px;
 }
 
 .site-footer nav {
@@ -646,19 +651,53 @@ details p {
   color: var(--muted);
 }
 
+.site-footer nav strong {
+  margin-bottom: 4px;
+  color: var(--paper);
+  font-size: 14px;
+}
+
+.site-footer nav a {
+  color: var(--muted);
+}
+
+.site-footer nav a:hover {
+  color: var(--gold);
+}
+
 .mobile-call {
   position: fixed;
   right: 16px;
-  bottom: 16px;
-  z-index: 20;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 80;
   display: none;
   width: calc(100% - 32px);
-  min-height: 50px;
+  min-height: 56px;
   align-items: center;
   justify-content: center;
-  background: var(--gold);
-  color: var(--ink);
+  gap: 8px;
+  border: 1px solid rgba(255, 226, 180, 0.5);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ff9f2f 0%, #f07416 100%);
+  color: #130a04;
+  box-shadow: 0 14px 34px rgba(240, 116, 22, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
   font-weight: 900;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.mobile-call::before {
+  content: "TEL";
+  display: inline-flex;
+  min-width: 34px;
+  min-height: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(19, 10, 4, 0.16);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
 }
 
 .area-page {
@@ -844,6 +883,10 @@ details p {
 }
 
 @media (max-width: 1120px) {
+  body {
+    padding-bottom: 84px;
+  }
+
   .menu-toggle {
     display: block;
   }

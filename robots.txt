@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://massagetime.kr/sitemap.xml
+Sitemap: https://massagetime.club/sitemap.xml
