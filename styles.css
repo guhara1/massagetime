@@ -717,11 +717,14 @@ details p {
   width: min(980px, calc(100% - 36px));
   margin: 0 auto;
   padding: 28px 0 86px;
+  display: grid;
+  gap: 18px;
 }
 
 .area-block {
-  padding: 34px 0;
-  border-top: 1px solid var(--line);
+  padding: 28px;
+  border: 1px solid rgba(241, 214, 148, 0.18);
+  background: #121116;
 }
 
 .area-block h2 {
@@ -738,6 +741,79 @@ details p {
   gap: 10px;
   margin: 0;
   padding-left: 20px;
+}
+
+.area-pricing-block,
+.area-review-block {
+  background: #0f0e13;
+}
+
+.area-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.area-price-grid article,
+.area-review-grid article {
+  border: 1px solid var(--line);
+  background: #17151c;
+  padding: 18px;
+}
+
+.area-price-grid h3 {
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.area-price-grid dl {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.area-price-grid dl div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(241, 214, 148, 0.12);
+}
+
+.area-price-grid dl div:last-child {
+  border-bottom: 0;
+}
+
+.area-price-grid dt {
+  color: #b8c4da;
+}
+
+.area-price-grid dd {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.area-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.area-review-grid p {
+  margin: 0;
+  color: #eadfcb;
+}
+
+.area-review-grid span {
+  display: block;
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .nearby-links {
@@ -868,5 +944,10 @@ details p {
 
   .area-cta {
     display: grid;
+  }
+
+  .area-price-grid,
+  .area-review-grid {
+    grid-template-columns: 1fr;
   }
 }
