@@ -14,3 +14,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://massagetime.club/sitemap.xml
+Sitemap: https://massagetime.club/sitemap1.xml
