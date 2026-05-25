@@ -16,107 +16,86 @@
     <meta name="theme-color" content="#09090c">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://massagetime.kr/#organization",
-            "name": "마사지TIME",
-            "legalName": "YH LAB",
-            "url": "https://massagetime.kr/",
-            "logo": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=512&q=80",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "0508-202-4743",
-              "contactType": "customer support",
-              "areaServed": "KR",
-              "availableLanguage": "ko"
-            }
-          },
-          {
-            "@type": "LocalBusiness",
-            "@id": "https://massagetime.kr/#localbusiness",
-            "name": "마사지TIME",
-            "legalName": "YH LAB",
-            "url": "https://massagetime.kr/",
-            "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80",
-            "telephone": "0508-202-4743",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "청석로 268",
-              "addressLocality": "파주시",
-              "addressRegion": "경기도",
-              "addressCountry": "KR"
-            },
-            "areaServed": ["서울", "경기", "인천", "부산"],
-            "priceRange": "80000 KRW-190000 KRW",
-            "description": "출장마사지 예약 상담과 코스별 요금 안내를 제공하는 상담 사이트입니다."
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://massagetime.kr/#website",
-            "name": "마사지TIME",
-            "url": "https://massagetime.kr/",
-            "publisher": { "@id": "https://massagetime.kr/#organization" }
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://massagetime.kr/#webpage",
-            "url": "https://massagetime.kr/",
-            "name": "마사지TIME 출장마사지 예약 상담",
-            "isPartOf": { "@id": "https://massagetime.kr/#website" },
-            "about": { "@id": "https://massagetime.kr/#localbusiness" },
-            "datePublished": "2026-05-24",
-            "dateModified": "2026-05-25",
-            "author": {
-              "@type": "Organization",
-              "name": "마사지TIME 콘텐츠팀",
-              "url": "https://massagetime.kr/#trust"
-            },
-            "reviewedBy": {
-              "@type": "Organization",
-              "name": "마사지TIME 상담 운영팀"
-            },
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80"
-            }
-          },
-          {
-            "@type": "FAQPage",
-            "@id": "https://massagetime.kr/#faq-schema",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "예약은 어떻게 진행하나요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "전화로 희망 지역, 시간, 코스, 이용 장소를 알려주시면 가능 여부와 기준 요금을 안내합니다."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "요금표와 최종 금액이 다를 수 있나요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "지역, 시간대, 코스 조건에 따라 달라질 수 있어 최종 금액은 예약 전 상담에서 확인합니다."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "치료나 통증 개선 목적의 서비스인가요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "마사지TIME은 휴식과 컨디션 관리를 위한 예약 상담을 안내하며 의료 행위나 치료 효과를 보장하지 않습니다."
-                }
-              }
-            ]
-          }
-        ]
-      }
-    </script>
+    <script type="application/ld+json">{
+          "@context": "https://schema.org",
+          "@graph": [
+                    {
+                              "@type": "Organization",
+                              "@id": "https://massagetime.kr/#organization",
+                              "name": "마사지TIME",
+                              "legalName": "YH LAB",
+                              "url": "https://massagetime.kr/",
+                              "logo": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=512&q=80",
+                              "contactPoint": {
+                                        "@type": "ContactPoint",
+                                        "telephone": "0508-202-4743",
+                                        "contactType": "customer support",
+                                        "areaServed": "KR",
+                                        "availableLanguage": "ko"
+                              }
+                    },
+                    {
+                              "@type": "LocalBusiness",
+                              "@id": "https://massagetime.kr/#localbusiness",
+                              "name": "마사지TIME",
+                              "legalName": "YH LAB",
+                              "url": "https://massagetime.kr/",
+                              "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80",
+                              "telephone": "0508-202-4743",
+                              "address": {
+                                        "@type": "PostalAddress",
+                                        "streetAddress": "청석로 268",
+                                        "addressLocality": "파주시",
+                                        "addressRegion": "경기도",
+                                        "addressCountry": "KR"
+                              },
+                              "areaServed": [
+                                        "서울",
+                                        "경기",
+                                        "인천",
+                                        "부산"
+                              ],
+                              "priceRange": "80000 KRW-190000 KRW",
+                              "description": "출장마사지 예약 상담과 코스별 요금 안내를 제공하는 상담 사이트입니다."
+                    },
+                    {
+                              "@type": "WebSite",
+                              "@id": "https://massagetime.kr/#website",
+                              "name": "마사지TIME",
+                              "url": "https://massagetime.kr/",
+                              "publisher": {
+                                        "@id": "https://massagetime.kr/#organization"
+                              }
+                    },
+                    {
+                              "@type": "WebPage",
+                              "@id": "https://massagetime.kr/#webpage",
+                              "url": "https://massagetime.kr/",
+                              "name": "마사지TIME 출장마사지 예약 상담",
+                              "isPartOf": {
+                                        "@id": "https://massagetime.kr/#website"
+                              },
+                              "about": {
+                                        "@id": "https://massagetime.kr/#localbusiness"
+                              },
+                              "datePublished": "2026-05-24",
+                              "dateModified": "2026-05-25",
+                              "author": {
+                                        "@type": "Organization",
+                                        "name": "마사지TIME 콘텐츠팀",
+                                        "url": "https://massagetime.kr/#trust"
+                              },
+                              "reviewedBy": {
+                                        "@type": "Organization",
+                                        "name": "마사지TIME 상담 운영팀"
+                              },
+                              "primaryImageOfPage": {
+                                        "@type": "ImageObject",
+                                        "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80"
+                              }
+                    }
+          ]
+}</script>
   </head>
   <body>
     <header class="site-header">
