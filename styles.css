@@ -121,7 +121,7 @@ img {
 
 .submenu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 0;
   z-index: 30;
   display: grid;
@@ -136,6 +136,15 @@ img {
   pointer-events: none;
   transform: translateY(8px);
   transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.submenu::before {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  height: 12px;
+  content: "";
 }
 
 .submenu-narrow {
