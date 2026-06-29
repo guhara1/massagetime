@@ -4,10 +4,16 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Bingbot
+Allow: /
+
 User-agent: NaverBot
 Allow: /
 
 User-agent: Yeti
+Allow: /
+
+User-agent: Daumoa
 Allow: /
 
 User-agent: *
@@ -15,3 +21,4 @@ Allow: /
 
 Sitemap: https://massage-time.netlify.app/sitemap.xml
 Sitemap: https://massage-time.netlify.app/sitemap1.xml
+Sitemap: https://massage-time.netlify.app/rss.xml
